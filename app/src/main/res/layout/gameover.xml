@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView app:cardBackgroundColor="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView
+            app:lottie_loop="true"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/gameover"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <com.koonat.easyfont.TextView
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="Game Over"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:font_path="font/font.ttf"
+            />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

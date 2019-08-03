@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="in.rishabh.sumgame.SplashActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_loop="false"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/splash"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <com.koonat.easyfont.TextView
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Sum Game"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:font_path="font/font.ttf"
+    />
+</LinearLayout>
+</RelativeLayout>

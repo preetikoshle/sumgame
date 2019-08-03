@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.rishabh.sumgame.sumgameActivity">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.koonat.easyfont.TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="POINTS"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:font_path="font/font.ttf"
+            />
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/txt"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="20dp"
+            android:text="0"
+            android:layout_marginBottom="-5dp"
+            android:layout_marginTop="-5dp"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="11dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:layout_width="wrap_content"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    android:layout_height="wrap_content">
+
+                    <com.koonat.easyfont.TextView
+                        app:font_path="font/font.ttf"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:id="@+id/text"
+                        android:textSize="30sp"
+                        android:text=""
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.CardView>
+
+
+                    <com.koonat.easyfont.TextView
+                        android:textStyle="bold"
+                        android:textSize="50sp"
+                        android:text="+"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:layout_marginTop="-5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:font_path="font/font.ttf" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="11dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.koonat.easyfont.TextView
+                        app:font_path="font/font.ttf"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:id="@+id/text2"
+                        android:textSize="30sp"
+                        android:text=""
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="30dp"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.koonat.easyfont.EditText
+                    android:hint="Ans"
+                    android:layout_gravity="center_vertical"
+                    app:font_path="font/font.ttf"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorAccent"
+                    android:padding="0dp"
+                    android:background="#00112333"
+                    android:gravity="center"
+                    android:id="@+id/edit"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
+
+<android.support.v7.widget.CardView
+    android:layout_margin="30dp"
+    app:cardCornerRadius="20sp"
+    android:id="@+id/btn"
+    app:cardBackgroundColor="#be5e4a"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.koonat.easyfont.TextView
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="SUBMIT"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_marginTop="-5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:font_path="font/font.ttf"
+        />
+</android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
