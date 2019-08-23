@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.rishabh.sumgame.GameActivity">
+
+   <ImageView
+       android:background="@drawable/background"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+
+   <ScrollView
+       android:layout_centerInParent="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:layout_centerInParent="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+                   android:id="@+id/slider"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginLeft="30dp"
+                   style="?android:attr/progressBarStyleHorizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:indeterminate="false"
+                   android:maxHeight="12dp"
+                   android:minHeight="16dp"
+                   android:progress="40"
+                   app:isRounded="true"
+                   app:backgroundColor="#cbcbcb"
+                   app:progressColor="#4CAF50"/>
+               <com.koonat.easyfont.TextView
+                   android:layout_marginTop="20dp"
+                   android:padding="2dp"
+                   android:textStyle="bold"
+                   android:textColor="#f78970"
+                   android:textSize="25sp"
+                   app:font_path="font/font.ttf"
+                   android:gravity="center"
+                   android:text="POINTS"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+               <com.robinhood.ticker.TickerView
+                   android:padding="13dp"
+                   android:id="@+id/number"
+                   android:textColor="#fb09090a"
+                   android:textSize="40sp"
+                   android:gravity="center"
+                   android:text="0"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+               <LinearLayout
+                   android:gravity="center_horizontal"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <android.support.v7.widget.CardView
+                       android:layout_margin="10dp"
+                       app:cardCornerRadius="8dp"
+                       app:cardElevation="8dp"
+                       android:background="#f7856c"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <com.koonat.easyfont.TextView
+                           android:id="@+id/text1"
+                           android:padding="8dp"
+                           android:background="#f7856c"
+                           android:textAlignment="center"
+                           app:font_path="font/font.ttf"
+                           android:textColor="#ffffff"
+                           android:textSize="30sp"
+                           android:layout_gravity="center"
+                           android:text="1"
+                           android:minWidth="60dp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+                   </android.support.v7.widget.CardView>
+
+                   <com.koonat.easyfont.TextView
+                       android:textStyle="bold"
+                       android:layout_marginRight="20dp"
+                       android:layout_marginLeft="20dp"
+                       android:textColor="#fb060606"
+                       android:textSize="50sp"
+                       android:textAlignment="center"
+                       app:font_path="font/font.ttf"
+                       android:layout_marginTop="-5dp"
+                       android:gravity="center"
+                       android:text="+"
+                       android:layout_width="50dp"
+                       android:layout_height="wrap_content" />
+                   <android.support.v7.widget.CardView
+                       android:layout_margin="10dp"
+                       app:cardCornerRadius="8dp"
+                       app:cardElevation="8dp"
+                       android:background="#f7856c"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <com.koonat.easyfont.TextView
+                           android:id="@+id/text2"
+                           android:padding="8dp"
+                           android:background="#f7856c"
+                           android:textAlignment="center"
+                           app:font_path="font/font.ttf"
+                           android:textColor="#ffffff"
+                           android:textSize="30sp"
+                           android:minWidth="60dp"
+                           android:layout_gravity="center"
+                           android:text="1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+                   </android.support.v7.widget.CardView>
+
+               </LinearLayout>
+               <android.support.v7.widget.CardView
+                   app:cardElevation="8dp"
+                   app:cardCornerRadius="10dp"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginTop="35dp"
+                   android:layout_marginBottom="22dp"
+                   app:cardBackgroundColor="#ffffff"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <com.koonat.easyfont.EditText
+                       android:hint="Ans"
+                       android:layout_gravity="center_vertical"
+                       app:font_path="font/font.ttf"
+                       android:textSize="30sp"
+                       android:padding="0dp"
+                       android:background="#00112333"
+                       android:gravity="center"
+                       android:id="@+id/enter"
+                       android:inputType="number"
+                       android:singleLine="true"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+               </android.support.v7.widget.CardView>
+
+
+
+
+               <android.support.v7.widget.CardView
+                   app:cardElevation="8dp"
+                   app:cardCornerRadius="20dp"
+                   android:layout_marginRight="28dp"
+                   android:layout_marginLeft="28dp"
+                   android:layout_marginTop="30dp"
+                   app:cardBackgroundColor="#bd5e4a"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <com.koonat.easyfont.Button
+                       android:text="SUBMIT"
+                       android:layout_gravity="center_vertical"
+                       app:font_path="font/font.ttf"
+                       android:textSize="20sp"
+                       android:textColor="#ffffff"
+                       android:padding="0dp"
+                       android:background="#00112333"
+                       android:gravity="center"
+                       android:id="@+id/button"
+                       android:inputType="number"
+                       android:singleLine="true"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+               </android.support.v7.widget.CardView>
+
+
+           </LinearLayout>
+
+       </LinearLayout>
+   </ScrollView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

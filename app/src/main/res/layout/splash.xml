@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView app:cardBackgroundColor="#ffffff"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    android:background="@color/colorPrimary"
+    tools:context="in.rishabh.sumgame.SplashActivity">
     <LinearLayout
-        android:layout_gravity="center"
+        android:layout_centerInParent="true"
         android:orientation="vertical"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
         <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/gameover"
-            app:lottie_loop="true"
+            app:lottie_loop="false"
             android:layout_gravity="center"
             app:lottie_autoPlay="true"
-            app:lottie_rawRes="@raw/gameover"
+             app:lottie_rawRes="@raw/startgame"
             android:layout_width="150dp"
             android:layout_height="150dp" />
 
+
         <com.koonat.easyfont.TextView
-            android:padding="10dp"
-            android:layout_marginTop="5dp"
             app:font_path="font/font.ttf"
-            android:text="Game Over"
-            android:textSize="25sp"
-            android:textColor="#f7856d"
-            android:textAlignment="center"
+            android:layout_marginTop="2dp"
+            android:textColor="#ffffff"
+            android:text="Sum Game"
             android:textStyle="bold"
+            android:textSize="25sp"
+            android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
 
+
+
+
+
+
     </LinearLayout>
 
-
-
-</android.support.v7.widget.CardView>
+</RelativeLayout>
